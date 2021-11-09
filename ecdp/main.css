@@ -1,0 +1,20 @@
+:root{
+    --black: black;
+    --white: white;
+    --pink: #FFD2DA;
+    --violet1: #DDD2FF;
+    --grey: #C8C6C6;
+    --bar: #f0edc9;
+    --logo: #24145b;
+}
+
+.menu, .companyname{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--white);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+

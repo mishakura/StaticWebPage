@@ -1,0 +1,277 @@
+
+.topheader {
+    
+    box-shadow: 0 1px 1px var(--black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.4s;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    z-index: 1;
+    
+
+
+}
+
+nav{
+    opacity: 1;
+    transition: opacity 0.4s;
+
+    
+   
+
+}
+.probemos{
+    display: flex;
+    align-items: center;
+}
+.topnav{
+    display: flex; 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+    
+}
+.menu {
+  display: flex;
+   
+   
+}
+
+.logo img{
+  border-radius: 50%;
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  margin-right: 10px;
+}
+.menu{
+    display: flex;
+    opacity: 1;
+   font-style: bold;
+    
+   
+}
+
+.menu li{
+    display: flex;
+    font-size: 16px;
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    
+    
+    
+}
+
+nav li img{
+    display: block;
+}
+nav p{
+    display: none;
+}
+nav{
+    background-image: url(images/plant5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 300px;
+    
+    border-bottom-right-radius: 300px;
+}
+
+#massage, #talle, #reflex, #ivana{
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30%;
+    padding: 5px;
+}
+#massage:hover, #talle:hover, #reflex:hover, #ivana:hover{
+ 
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 30%;
+    
+}
+
+
+
+
+
+.companyname{
+    text-align: center;
+    
+    font-size: 14px;
+    padding: 0px 0px 0px 0px;
+    
+}
+
+
+
+
+.b1{
+    display: none;
+    padding: 10px;
+    margin: 0px;
+    text-decoration-line: overline;
+    
+    
+}
+
+.b2{
+    
+    position: relative;
+    padding: 10px;
+    
+    margin: 0px 0px 0px 0px;
+    text-decoration-line: overline;
+}
+
+.b3{
+   
+    display: none;
+    padding: 10px;
+    margin: 0px;
+    text-decoration-line: overline;
+    
+}
+
+.b4{
+    
+    display: none;
+    padding: 10px;
+    margin: 0px;
+    text-decoration-line: overline;
+}
+
+.open-menu{
+    display: none;
+}
+.close-menu{
+    display:none;
+}
+
+
+
+/*Cell phone */
+@media (max-width: 750px) {
+    
+    
+    .topheader{
+        border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    }
+    .topnav{
+        justify-content: space-between;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        
+    }
+    
+    .menu{
+        
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items:center;
+        background-color: var(--logo);
+        background-image: url(images/plant5.jpg);
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        overflow-y: auto;
+        opacity: 0; 
+        pointer-events: none;
+        transition: opacity 0.6s;
+        
+       
+    }
+
+    .menu a {
+        font-size: 16px;
+        list-style: none;
+        line-height: 40px;
+
+    }
+    nav{
+        background-color: var(--logo);
+    }
+
+    .companyname{
+        text-align: center;  
+        font-size: 14px;
+        padding: 0px 14px 0px 0px;
+        
+    }
+    .open-menu{
+        display:block;   
+        border: none;
+        background: transparent;
+        border-radius: 100%; 
+        flex-direction: column;
+    
+       
+    }
+    
+    .close-menu {
+        display:block;
+        align-self: flex-end;
+        border: none;
+        background: none;
+        padding: 25px 16px 0px 0px;
+
+
+    }
+    #massage, #talle, #reflex, #ivana{
+     display:none;
+    }
+    .b1,.b2,.b3,.b4{
+        display: block;
+        transition: all 0.2s ease-in-out;
+    }
+    .b2{
+        position: relative;
+        left: 0;
+    }
+    .b1:hover{
+        
+        font-size: 19px;
+        font-weight: 500;
+        font-style: bold;
+        text-shadow: 10px 10px 10px #1A0F43;  
+    
+    }
+    .b2:hover{
+        font-size: 19px;
+        font-weight: 500;
+        font-style: bold;
+        text-shadow: 10px 10px 10px #1A0F43; 
+    }
+    .b3:hover{
+        font-size: 19px;
+        font-weight: 500;
+        font-style: bold;
+        text-shadow: 10px 10px 10px #1A0F43; 
+    }
+    .b4:hover{
+        font-size: 19px;
+        font-weight: 500;
+        font-style: bold;
+        text-shadow: 10px 10px 10px #1A0F43;
+    }
+    
+    .probemos{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
